@@ -1,0 +1,2 @@
+Het verbaasd mij dat zulke grote game gemaakt is met python. Ik zie ook dat oude games zoals Battlefield 2, Sims 4, World of Tanks en Civilization IV gemaakt is met python.
+Nu gebruiken nieuwe games C++ of javascript, maar dit betekent wel dat met python je games kan maken. Misschien niet zo mooi maar wel mogelijk. 
