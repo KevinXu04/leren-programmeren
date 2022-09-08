@@ -1,6 +1,5 @@
-# speelhal
-
-aantalpersonen = 3
+aantalpersonen = input('Hoeveel personen?')
+aantalpersonen = int(aantalpersonen)
 
 ticket = 7.45
 ticket = float(ticket)

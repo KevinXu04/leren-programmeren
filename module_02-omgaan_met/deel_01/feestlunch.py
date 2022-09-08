@@ -1,9 +1,13 @@
+aantalcroissant = input('Hoeveel croissantjes?')
+aantalcroissant = int(aantalcroissant)
+
+aantalstokbrood = input('Hoeveel stokbroden?')
+aantalstokbrood = int(aantalstokbrood)
+
 croissant = 0.39
 stokbrood = 2.78
 kortingsbon = 0.50
 
-aantalcroissant = 17
-aantalstokbrood = 2
 aantalkortingsbon = 3
 
 betalen = (aantalcroissant * croissant + aantalstokbrood * stokbrood) - (aantalkortingsbon * kortingsbon)
