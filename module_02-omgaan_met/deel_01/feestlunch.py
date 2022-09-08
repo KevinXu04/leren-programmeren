@@ -12,4 +12,4 @@ kortingsbon = float(kortingsbon)
 
 betalen = (aantalcroissant * croissant + aantalstokbrood * stokbrood) - (aantalkortingsbon * kortingsbon)
    
-print("De feestlunch kost je bij elkaar", betalen, "euro voor de", aantalcroissant, "croissantjes")
+print("De feestlunch kost je bij elkaar", betalen, "euro voor de", aantalcroissant, "croissantjes en de", aantalstokbrood, "stokbroden als de", aantalkortingsbon, "kortingsbonnen nog geldig zijn!")

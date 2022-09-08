@@ -10,6 +10,7 @@ gameseat = float(gameseat)
 aantalminuten = 5
 keerminuten = 9
 
+hoelang = aantalminuten * keerminuten
 betalen = (aantalpersonen * ticket) + (keerminuten * gameseat)
 
-print('Te betalen:', betalen)
+print("Dit geweldige dagje-uit met", aantalpersonen, "mensen in de Speelhal met", hoelang, "minuten VR kost je maar", betalen, "euro")
