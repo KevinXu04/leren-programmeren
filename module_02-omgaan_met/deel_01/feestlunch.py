@@ -1,8 +1,5 @@
-aantalcroissant = input('Hoeveel croissantjes?')
-aantalcroissant = int(aantalcroissant)
-
-aantalstokbrood = input('Hoeveel stokbroden?')
-aantalstokbrood = int(aantalstokbrood)
+aantalcroissant = int(input('Hoeveel croissantjes?'))
+aantalstokbrood = int(input('Hoeveel stokbroden?'))
 
 croissant = 0.39
 stokbrood = 2.78
