@@ -6,14 +6,10 @@ aantalcroissant = 17
 aantalstokbrood = 2
 aantalkortingsbon = 3
 
-aantalcroissant = int(aantalcroissant)
-aantalstokbrood = int(aantalstokbrood)
-aantalkortingsbon = int(aantalkortingsbon)
-
 croissant = float(croissant)
 stokbrood = float(stokbrood)
 kortingsbon = float(kortingsbon)
 
 betalen = (aantalcroissant * croissant + aantalstokbrood * stokbrood) - (aantalkortingsbon * kortingsbon)
-
-print('Te betalen:', betalen)   
+   
+print("De feestlunch kost je bij elkaar", betalen, "euro voor de", aantalcroissant, "croissantjes")
