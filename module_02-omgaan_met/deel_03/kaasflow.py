@@ -24,6 +24,10 @@ else :
     else :
         korst = input("Heeft de kaas een korst?")
         if korst == "ja":
-            print("Camembert")
+            stinkt = input("Stinkt de kaas?")
+            if stinkt == "ja":
+                print("Camembert")
+            else :
+                print("Bri")
         else :
             print("Mozzarella")
