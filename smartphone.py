@@ -4,7 +4,7 @@ samsung = int(input("Hoe duur is de Samsung Galaxy S22? "))
 max1 = samsung - iphone
 max2 = iphone - samsung
 
-if (iphone > 900 and samsung > 900 and iphone > samsung):
+if (iphone > 900 and samsung > 900 and iphone >= samsung):
     print(f"""De iPhone 13 is het duurst, de telefoon kost: {iphone} euro.
 De Samsung Galaxy S22 is het goedkoopst, de telefoon kost: {samsung} euro
 Het advies is dus geen telefoon te kopen, ze zijn te duur

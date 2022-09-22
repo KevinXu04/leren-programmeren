@@ -5,7 +5,7 @@ def delay_print1 (s):
     for c in s:
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(0.001)
+        time.sleep(0.01)
 
 delay_print1("Wat is je naam? ")
 name = input().strip()
@@ -16,13 +16,13 @@ Nu zit je in een van de meest beveiligde gevangenis van de wereld genaamd "ADX F
 Nu op 15 november heb je je hele bende bij elkaar en nu moet je een keuze maken van hoe je moet ontsnappen.
 """) # Intro
 
-time.sleep(1) # 2 seconden delay
+time.sleep(3) # 2 seconden delay
 
 delay_print1("""
-Please wait...
+Loading...
 """)
 
-time.sleep(2)
+time.sleep(7)
 
 delay_print1("""
 Je bende heeft in totaal 5 mensen inclusief jij. Ze heten Vincent, Farhan, Oscar en Jez
@@ -90,9 +90,9 @@ Type een van de nummers in.
         keuze2 = input().strip()
     
     if keuze2 == "1": # wachten 
-        delay_print1("Je hebt gekozen om te wachten tot morgen. *+10 risico*")
-        delay_print1("Terwijl je aan het slapen bent hoor je opeens geluiden buiten je cell...")
-        delay_print1("ZE CHECKEN ELKE CELL! NU HEB JE DE KEUZE OM BETRAPT TE WORDEN OF NU ONTSNAPPEN ZONDER JE BENDE!")
+        delay_print1(""""Je hebt gekozen om te wachten tot morgen. *+10 risico*
+Terwijl je aan het slapen bent hoor je opeens geluiden buiten je cell...
+ZE CHECKEN ELKE CELL! NU HEB JE DE KEUZE OM BETRAPT TE WORDEN OF NU ONTSNAPPEN ZONDER JE BENDE!""")
 
         delay_print1("""
 Laat je je cell check door de bewakers of ontsnap je nu door de tunnel?
@@ -104,90 +104,116 @@ Type een van de nummers in.
 
     if prisoncheck == "1":
         delay_print1("""Terwijl je door de tunnel was aan het ontsnappen waren de bewakers al bij je cell. Ze waren sneller dan dat je dacht
-        Toen je uit de tunnel was waren ze al op alert dat je weg was. De snipers zagen je en schoten je dood...""")
-        time.sleep(10)
-        delay_print1("Helaas heb je de verkeerde keuze genomen en ben je doodgegaan. Probeer het opnieuw!")
+Toen je uit de tunnel was waren ze al op alert dat je weg was. De snipers zagen je en schoten je dood...
+Helaas heb je de verkeerde keuze genomen en ben je doodgegaan. Probeer het opnieuw!""")
+        exit()
     if prisoncheck == "2":
-        delay_print1("Je hebt gekozen om te wachten...")
-        time.sleep(3)
-        delay_print1("Jij bent nu aan de beurt...")
-        time.sleep(5)
-        delay_print1("Ze jouw cell aan het doorzoeken...")
-        time.sleep(1)
-        delay_print1("...")
-        time.sleep(7)
-        delay_print1("Helaas hebben ze de tunnel gevonden... Probeer het opnieuw!")
+        delay_print1("""Je hebt gekozen om te wachten...
+Jij bent nu aan de beurt...
+Ze jouw cell aan het doorzoeken...
+...
+Helaas hebben ze de tunnel gevonden... Probeer het opnieuw!""")
+        exit()
     if keuze2 == "2":
-        delay_print1("Je hebt gekozen om je kameraden in de steek te laten")
-        time.sleep(1)
-        delay_print1("...")
-        time.sleep(4)
-        delay_print1("Toen jullie eindelijk vrij waren hadden Oscar en Jez achtergebleven om te wachten voor Vincent en Farhan.")
-        time.sleep(4)
-        keuze3 = input("""Nu heb je de keuze om te wachten of alleen verder te gaan. Type het getal in.
-        1. Wachten
-        2. Verder gaan
+        delay_print1("""Je hebt gekozen om je kameraden in de steek te laten
+...
+Toen jullie eindelijk vrij waren hadden Oscar en Jez achtergebleven om te wachten voor Vincent en Farhan.""")
+
+        delay_print1("""
+Nu heb je de keuze om te wachten of alleen verder te gaan. Type het getal in.
+    1. Wachten
+    2. Verder gaan
+Type een van de nummers in.
         """)
+        keuze3 = input().strip()
         if keuze3 == "1":
-            delay_print1("Je hebt gekozen om te wachten.")
-            time.sleep(3)
-            delay_print1("Helaas was dat de foute keuze geweest. Na een tijdje hadden de bewakers je gespot.")
-            time.sleep(3)
-            delay_print1("Jullie probeerden om weg te rennen, maar het lukte niet. Uiteindelijk waren jullie alle drie doodgeschoten.")
-            time.sleep(4)
-            delay_print1("Helaas heb je de verkeerde keuze genomen en ben je doodgegaan. Probeer het opnieuw!")
+            delay_print1("""Je hebt gekozen om te wachten.
+Helaas was dat de foute keuze geweest. Na een tijdje hadden de bewakers je gespot.
+Jullie probeerden om weg te rennen, maar het lukte niet. Uiteindelijk waren jullie alle drie doodgeschoten.
+Helaas heb je de verkeerde keuze genomen en ben je doodgegaan. Probeer het opnieuw!""")
+            exit()
         if keuze3 == "2":
-            delay_print1("Je hebt gekozen om alleen verder te gaan")
-            time.sleep(2)
-            delay_print1("...")
-            time.sleep(4)
-            delay_print1("Gefeliciteerd je bent ontsnapt!")
-            time.sleep(3)
-            delay_print1("Helaas waren de rest van je bende opgepakt.")
-            time.sleep(3)
-            delay_print1("""THE END
-            """)
+            delay_print1("""Je hebt gekozen om alleen verder te gaan
+...
+Gefeliciteerd je bent ontsnapt!
+Helaas waren de rest van je bende opgepakt.
+THE END
+""")
 
 if escape == "2": # gekozen voor prison shootout
-    delay_print1("Je hebt gekozen om de harde manier te nemen.")
-    time.sleep(3)
-    delay_print1(f"""{name}: 'Hey Oscar heb je de wapens uitgedeeld?'""")
-    time.sleep(3)
-    delay_print1("Oscar: 'Ja man bijna iedereen heeft nu een wapen.'")
-    time.sleep(3)
-    keuze4 = input("""Nu heb je de keuze om nu te rellen of om te wachten. Type het nummer in.
+    delay_print1(f"""Je hebt gekozen om de harde manier te nemen.
+{name}: 'Hey Oscar heb je de wapens uitgedeeld?'
+Oscar: 'Ja man bijna iedereen heeft nu een wapen.'""")
+
+    delay_print1("""
+Nu heb je de keuze om nu te rellen of om te wachten. Type het nummer in.
     1. Verder gaan
     2. Wachten
+Type een van de nummers in.
     """)
+    keuze4 = input().strip()
+
     if keuze4 == "1":
-        delay_print1("Je hebt gekozen om verder te gaan.")
-        time.sleep(3)
-        delay_print1(f"""{name}: 'Oke mannen de tijd is aangebroken!' """)
-        time.sleep(3)
-        wapen = input("""Jij als de leider van de rebellen kan kiezen welke uitrusting je kiest. Type het nummer in.
-        NOTE: Het uitrusting dat jij kiest kan ervoor zorgen voor latere complicaties!
-        1. AK-47 en RPG
-        2. M4A1 en C4
-        """)
-        delay_print1("Nadat je je uitrusting had uitgekozen ging jij als eerste een bewaker neerschieten.")
-        time.sleep(4)
-        delay_print1(f"""{name}: 'KOM OP MANNEN HET IS TIJD OM ONZE VRIJHEID TERUG TE NEMEN!'""")
-        time.sleep(5)
-        delay_print1("De uitgangen werden als snel gesloten door de bewakers.")
-        time.sleep(3)
-        delay_print1("Farhan: 'Het is tijd!'")
-        time.sleep(2)
-        delay_print1("Farhan drukte op een knop en op meerdere plekken gingen bommen af ook de afgesloten uitgangen gingen kapot.")
-        time.sleep(4)
-        delay_print1("")
+        delay_print1(f"""Je hebt gekozen om verder te gaan.
+{name}: 'Oke mannen de tijd is aangebroken!' """)
+
+        delay_print1("""
+Jij als de leider van de rebellen kan kiezen welke uitrusting je kiest. Type het nummer in.
+NOTE: Het uitrusting dat jij kiest kan ervoor zorgen voor latere complicaties!
+    1. AK-47 en Granaat
+    2. M4A1 en C4
+Type een van de nummers in.
+""")
+        wapen = input().strip()
+
+        delay_print1(f"""Nadat je je uitrusting had uitgekozen ging jij als eerste een bewaker neerschieten.
+{name}: 'KOM OP MANNEN HET IS TIJD OM ONZE VRIJHEID TERUG TE NEMEN!'
+De uitgangen werden als snel gesloten door de bewakers.
+Farhan: 'Het is tijd!'
+Farhan drukte op een knop en op meerdere plekken gingen bommen af, ook de afgesloten uitgangen gingen kapot.
+Na de ontploffingen stormde alle gevangenen af op de overgebleven bewakers.
+Tijdens de chaos besloot jij en je bende weg te sluipen zonder andere.
+Bij een van de geheime uitgangen was de deur nog steeds dicht.
+Zo te zien waren de bommen net niet genoeg
+Dus jij besloot je uitrusting te gebruiken
+""")
+        if wapen == "1":
+            delay_print1("""Je gebruikte je granaat.
+...
+            """)
+            time.sleep(3)
+            delay_print1(f"""Het werkte niet.
+Dus besloot jullie terug te gaan naar de rebellen en via de hoofdingang te ontsnappen.
+Toen jullie uitkwamen was de gevangenis al helemaal omsingeld.
+Vincent: 'Het is klaar boys. We kunnen niet meer ontsnappen.'
+Farhan: 'Nee! Als laatste stormen we buiten en doden we hun allemaal!'
+Jij besloot mee te gaan.
+...
+""")
+            time.sleep(3)
+            delay_print1(f"""Helaas waren jullie dood geschoten en de gevangenis was weer ingenomen.
+Probeer het opnieuw!
+ """)
+            exit()
+        if wapen == "2":
+            delay_print1(f"""Je gebruikte je C4.
+...
+""")
+            time.sleep(3)
+            delay_print1(f"""Het werkte!
+{name}: 'We hebben eindelijk onze vrijheid!'
+Toen jullie uitkwamen waren jullie omsingeld door de politie
+Jullie gaven over
+...
+""")
+            time.sleep(3)
+            delay_print1("""Helaas heb je verloren. Probeer het opnieuw!""")
+            exit()
 
     if keuze4 == "2":
-        delay_print1("Je hebt gekozen om te wachten...")
-        time.sleep(3)
-        delay_print1("Misschien was dat niet zo'n slimme keuze geweest.")
-        time.sleep(4)
-        delay_print1("Een van de mensen hadden jou uitverkocht aan de bewakers.")
-        time.sleep(4)
-        delay_print1("Nu checken ze elke cell voor wapens...")
-        time.sleep(4)
-        delay_print1("Helaas ben je betrapt door de bewakers. Probeer het opnieuw!")
+        delay_print1("""Je hebt gekozen om te wachten...
+Misschien was dat niet zo'n slimme keuze geweest.
+Een van de mensen hadden jou uitverkocht aan de bewakers.
+Nu checken ze elke cell voor wapens...
+Helaas ben je betrapt door de bewakers. Probeer het opnieuw!""")
+        exit()
