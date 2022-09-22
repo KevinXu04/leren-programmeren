@@ -5,7 +5,7 @@ def delay_print1 (s):
     for c in s:
         sys.stdout.write(c)
         sys.stdout.flush()
-        time.sleep(0.01)
+        time.sleep(0.03)
 
 delay_print1("Wat is je naam? ")
 name = input().strip()
@@ -56,6 +56,7 @@ Snap back to reality!
 
 Vincent: 'De gevangene die wouden ontsnappen zijn door de bewakers allemaal dood geschoten.'
 Oscar: 'We hebben een keuze om te wachten totdat ze wat minder alert zijn of we gaan nu!'""")
+
     delay_print1("""
 Kies nu de optie om te wachten of niet.
     1. Doorgaan

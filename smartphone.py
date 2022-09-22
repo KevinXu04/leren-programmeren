@@ -10,7 +10,7 @@ De Samsung Galaxy S22 is het goedkoopst, de telefoon kost: {samsung} euro
 Het advies is dus geen telefoon te kopen, ze zijn te duur
 """)
     exit()
-elif (iphone > 900 and samsung > 900 and iphone < samsung):
+elif (iphone > 900 and samsung > 900 and iphone <= samsung):
     print(f"""De Samsung Galaxy S22 is het duurst, de telefoon kost: {samsung} euro.
 De iPhone 13 is het goedkoopst, de telefoon kost: {iphone} euro
 Het advies is dus geen telefoon te kopen, ze zijn te duur
