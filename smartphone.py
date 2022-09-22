@@ -18,5 +18,5 @@ Het advies is dus de Samsung te kopen. Deze is namelijk {max2} euro goedkoper da
 elif max2 <= 50:
     print(f"""De iPhone is het duurst, de telefoon kost: {iphone} euro.
 De Samsung is het goedkoopst, de telefoon kost: {samsung} euro.
-Het advies is dus de iPhone te kopen. Deze is namelijk {max2} euro goedkoper dan de Samsung
+Het advies is dus de iPhone te kopen. Deze is namelijk {max2} euro duurder dan de Samsung
 """)
