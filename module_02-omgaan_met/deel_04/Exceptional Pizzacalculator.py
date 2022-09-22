@@ -7,8 +7,6 @@ try:
 except:
     print("Nee dat is niet juist. Voer een nummer in!")
 
-
-
 if afmeting in("s","small","Small","S"):
     prijs = 6.99
 if afmeting in("m","medium","Medium","M"):
