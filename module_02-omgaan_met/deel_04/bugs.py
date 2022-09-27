@@ -32,6 +32,6 @@ try:
     if int(number == num1 + num2):
         print('Dat is juist')
     else:
-        print('Nee dat klopt niet {}'.format(name)) 
+        print(f'Nee dat klopt niet {name}') 
 except:
     print('Dat is geen nummer!')
