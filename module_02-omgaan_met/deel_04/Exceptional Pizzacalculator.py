@@ -2,10 +2,13 @@
 # Opdracht: Pizza calculator
 
 afmeting = input('Kies de grootte: small, medium, large ')   # Vraagt welke grootte pizza 
-try:
-    aantal = int(input("Hoeveel pizza's wilt u? ")) # Hier vraagt hij hoeveel pizza's de persoon wilt
-except:
-    print("Nee dat is niet juist. Voer een nummer in!")
+
+while True:
+    try:
+        aantal = int(input("Hoeveel pizza's wilt u? ")) # Hier vraagt hij hoeveel pizza's de persoon wilt
+        break
+    except:
+        print("Nee dat is niet juist. Voer een nummer in!")
 
 if afmeting in("s","small","Small","S"):
     prijs = 6.99
@@ -16,7 +19,7 @@ if afmeting in("l","large","Large","L"):
 
 totaalprijs = aantal * prijs
 
-print(f""""
+print(f"""
     BON
     -------------------------------------
     {aantal} {afmeting} pizza's       {aantal}x {prijs},- €

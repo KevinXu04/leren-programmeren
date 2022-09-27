@@ -4,7 +4,6 @@ name = input('Wat is jouw naam? ')
 print('Hallo', name)
 
 favoriteSeason = input(f'Wat is jouw favorite seizoen {name}? A) Lente, B) Zomer, C) Herfst of D) Winter ')
-answer = favoriteSeason.lower
 
 if favoriteSeason in ("a", "A"):
     print("Ik hou ook van de lente!")
@@ -22,14 +21,14 @@ trueOrFalse = random.randint(0,1)
 if trueOrFalse:
     print('Ik vind dat ook een mooie kleur!')
 else:
-        print(f'TBH, ik hou niet zo van {favoriteColor}...')
+    print(f'TBH, ik hou niet zo van {favoriteColor}...')
 
 num1 = random.randint(1,10)
 num2 = random.randint(5,15)
 
 try:
     number = input(f'En weet jij wat {num1}+{num2} is?')
-    if int(number == num1 + num2):
+    if number == num1 + num2:
         print('Dat is juist')
     else:
         print(f'Nee dat klopt niet {name}')     
