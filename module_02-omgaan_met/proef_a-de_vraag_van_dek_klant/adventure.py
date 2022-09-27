@@ -15,7 +15,8 @@ def slowPrint (s):
 
 fastPrint("What is your name? ")
 name = input().strip()
-print(f"Greetings {name}! Welcome to your adventure")
+fastPrint(f"""Greetings {name}! Welcome to your adventure
+""")
 
 fastPrint("Would you like to play the game or die? (play/die) ")
 answer = input().strip()
