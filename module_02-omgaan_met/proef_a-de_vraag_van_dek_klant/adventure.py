@@ -3,7 +3,7 @@ import sys
 
 def fastPrint (s):
     for c in s:
-        sys.stdout.write(c)
+        sys.stdout.write(c) 
         sys.stdout.flush()
         time.sleep(0.03)
 

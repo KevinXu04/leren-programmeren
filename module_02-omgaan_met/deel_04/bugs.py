@@ -21,8 +21,8 @@ favoriteColor = input('En wat is je favoriete kleur? ')
 trueOrFalse = str(random.randint(0,1))
 if True:
     print('Ik vind dat ook een mooie kleur!')
-elif False:
-    print('TBH, ik hou niet zo van {}...'.format(favoritecolor))
+if not False:
+        print(f'TBH, ik hou niet zo van {favoriteColor}...')
 
 num1 = random.randint(1,10)
 num2 = random.randint(5,15)
