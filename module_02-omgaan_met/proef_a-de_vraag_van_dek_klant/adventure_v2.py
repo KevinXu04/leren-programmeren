@@ -5,7 +5,7 @@ def fastPrint (s):
     for c in s:
         sys.stdout.write(c) 
         sys.stdout.flush()
-        time.sleep(0.25)
+        time.sleep(0.025)
 
 def slowPrint (s):
     for c in s:
