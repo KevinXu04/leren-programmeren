@@ -149,7 +149,8 @@ You went home. Good ending 4/6
     exit()
 
 if decision == "runaway":
-            fastPrint("""You decided to continue running away. It was the best decision you could have made!
+    fastPrint("""You decided to continue running away. It was the best decision you could have made!
 You went home and arrived safely.
 Good ending 6/6
 """)
+    exit()
