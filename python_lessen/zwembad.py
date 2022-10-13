@@ -19,6 +19,9 @@ afstand = 60
 kostenPerKM = 60 * 2.05
 voorrijkosten = kostenPerKM + voorrijkostenVastePrijs
 
+# Vierkante meter zwembad
+zwembadVierkanteMeter = lengte * breedte
+
 # Afwerken kosten
 if zwembadInhoud < 20:
     afwerkenPrijsPer = 250
