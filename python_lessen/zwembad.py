@@ -1,7 +1,7 @@
 # Grootte zwembad
-lengte = 8
-breedte = 3
-diepte = 1.5
+lengte = int(input("Wat is de lengte van het zwembad? "))
+breedte = int(input("Wat is de breedte van het zwembad? "))
+diepte = int(input("Wat is de diepte van het zwembad? "))
 
 # Kosten uitgraven grond
 zwembadInhoud = lengte * breedte * diepte
