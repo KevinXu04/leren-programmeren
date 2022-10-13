@@ -19,6 +19,19 @@ afstand = 60
 kostenPerKM = 60 * 2.05
 voorrijkosten = kostenPerKM + voorrijkostenVastePrijs
 
+# Afwerken kosten
+if zwembadInhoud < 20:
+    afwerkenPrijsPer = 250
+    meerprijsRood = 25
+    meerprijsKeuzeKleur = 100
+elif zwembadInhoud >= 20:
+    afwerkenPrijsPer = 200
+    meerprijsRood = 20
+    meerprijsKeuzeKleur = 125
+else:
+    print("Error")
+    exit()
+
 # Totaal kosten
 totaalprijs = afvoerGrondPrijs + uitgravenPrijs + voorrijkosten
 
