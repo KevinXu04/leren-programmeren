@@ -1,11 +1,26 @@
+# Grootte zwembad
 lengte = 8
 breedte = 3
 diepte = 1.5
 
-kostenAfvoerenGrond = 32.50
-
+# Kosten uitgraven grond
 zwembadInhoud = lengte * breedte * diepte
+kostenUitgraven = 25
+uitgravenPrijs = zwembadInhoud * kostenUitgraven
 
-totaalprijs = zwembadInhoud * kostenAfvoerenGrond
+# Kosten afvoer grond
+kostenAfvoerenGrond = 32.50
+afvoerGrondPrijs = zwembadInhoud * kostenAfvoerenGrond
 
-print(totaalprijs)
+# Totaal kosten
+totaalprijs = afvoerGrondPrijs + uitgravenPrijs
+
+
+
+# Bon
+print(f"""
+Uitgraven:          {uitgravenPrijs}
+Afvoeren grond:     {afvoerGrondPrijs}
+
+Totaal prijs:       {totaalprijs}
+""")
