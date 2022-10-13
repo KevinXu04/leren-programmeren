@@ -12,8 +12,15 @@ uitgravenPrijs = zwembadInhoud * kostenUitgraven
 kostenAfvoerenGrond = 32.50
 afvoerGrondPrijs = zwembadInhoud * kostenAfvoerenGrond
 
+# Voorrijkosten
+voorrijkostenVastePrijs = 250
+voorrijkostenPerKM = 2.05
+afstand = 60
+kostenPerKM = 60 * 2.05
+voorrijkosten = kostenPerKM + voorrijkostenVastePrijs
+
 # Totaal kosten
-totaalprijs = afvoerGrondPrijs + uitgravenPrijs
+totaalprijs = afvoerGrondPrijs + uitgravenPrijs + voorrijkosten
 
 
 
@@ -21,6 +28,7 @@ totaalprijs = afvoerGrondPrijs + uitgravenPrijs
 print(f"""
 Uitgraven:          {uitgravenPrijs}
 Afvoeren grond:     {afvoerGrondPrijs}
+Voorrijkosten       {voorrijkosten}
 
 Totaal prijs:       {totaalprijs}
 """)
