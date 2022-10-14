@@ -1,6 +1,10 @@
-getal = 50
+nummer = 50
+totaal = 0
 output = ""
-while getal < 1000:
-    getal += 1 
-    output += f" + {getal}"
-    print(f"{output} = {getal}") 
+getal = 0
+while totaal < 1000:
+    totaal += nummer
+    nummer += 1
+    output += f" + {nummer}"
+    getal += 1
+    print(f"{getal}. 50{output} = {totaal}")  
