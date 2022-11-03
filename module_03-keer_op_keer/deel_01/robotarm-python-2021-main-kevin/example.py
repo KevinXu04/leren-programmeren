@@ -1,17 +1,14 @@
 from shutil import move
 from RobotArm import RobotArm
 
-robotArm = RobotArm('exercise 8')
+robotArm = RobotArm('exercise 10')
 
 # Jouw python instructies zet je vanaf hier:
 robotArm.speed = 3
-robotArm.moveRight()
-for x in range(7):
-    robotArm.grab()
-    for x in range(8):
-        robotArm.moveRight()
-    robotArm.drop()
-    for x in range(8):
-        robotArm.moveLeft()
+
+robotArm.grab()
+for x in range(4):
+    robotArm.moveRight()
+    
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
