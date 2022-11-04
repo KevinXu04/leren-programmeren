@@ -3,7 +3,7 @@ from RobotArm import RobotArm
 robotArm = RobotArm('exercise 4')
 
 # Jouw python instructies zet je vanaf hier:
-robotArm.speed = 3
+robotArm.speed = 2
 for x in range(5):
     robotArm.grab()
     for x in range(2):
