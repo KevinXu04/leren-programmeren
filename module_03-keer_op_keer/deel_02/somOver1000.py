@@ -4,7 +4,8 @@ output = ""
 getal = 0
 while totaal < 1000:
     nummer += 1
-    totaal += nummer
-    output += f" + {nummer}"
-    getal += 1
-    print(f"{getal}. 50{output} = {totaal}")  
+    if nummer%3 == 0:
+        totaal += nummer
+        output += f" + {nummer}"
+        getal += 1
+        print(f"{getal}. 50{output} = {totaal}")  

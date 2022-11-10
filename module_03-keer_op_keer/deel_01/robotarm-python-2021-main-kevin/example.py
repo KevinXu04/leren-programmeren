@@ -13,7 +13,6 @@ while bewegen:
     color = robotArm.scan()
     if color == "":
         bewegen = False
-        robotArm.wait()
     else:
         for x in range(0,teller):
             robotArm.moveRight()

@@ -10,4 +10,4 @@ for character in sentence:
 if totalVowels > len(sentence) // VOWELRATIO:
   print('Heel klinkend!')
 else:
-  print('Klinkt echt niet!')  
+  print('Klinkt echt niet!')    
