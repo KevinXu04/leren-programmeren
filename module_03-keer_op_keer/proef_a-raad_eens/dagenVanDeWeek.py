@@ -1,0 +1,17 @@
+alleDagen = ("Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag")
+werkDagen = ("Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag")
+weekendDagen = ("Zaterdag", "Zondag")
+print("Alle dagen in de week zijn:", alleDagen)
+print("De werkdagen zijn:", werkDagen)
+print("De weekenddagen zijn:", weekendDagen)
+
+x = reversed(alleDagen)
+x = tuple(x)
+y = reversed(werkDagen)
+y = tuple(y)
+z = reversed(weekendDagen)
+z = tuple(z)
+
+print("Alle dagen van de week in omgekeerde volgorde zijn:", x)
+print("De werkdagen in omgekeerde volgorde zijn:", y)
+print("De weekenddagen in omgekeerde volgorde zijn:", z)

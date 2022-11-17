@@ -50,7 +50,3 @@ while True:
             else:
                 geraden = 0
                 continue
-
-
-
-
