@@ -1,19 +1,19 @@
-boodschappen = []
+boodschappen = {}
 
 while True:
-    item = input("Voeg uw boodschap toe. Type n om te stoppen. ")
-    if item == "n":
-        break
-    aantal = int(input("Hoeveel wil je ervan hebben? "))
-    boodschap = [item, aantal]
-    boodschappen.append(boodschap)
+    item = input("Wat wil je toevoegen? ")
+    aantal = int(input("Hoeveel wil je er hebben? "))
     
+    if item in boodschappen.keys():
+        boodschappen[item] += aantal
+    else:
+        boodschappen.update({item : aantal})
 
-print("-[ BOODSCHAPPENNLIJST ]- ")
-b = 0
-for x in boodschappen:
-    aantal = int(boodschappen[b][1])
-    item = boodschappen[b][0]
-    print(f'{aantal} x  {item} ')
-    b += 1
-print('------------------------')
+    vraag = input("Wil je nog iets toevoegen? ")
+    if vraag in("n", "no"):
+        break
+
+print("-[ BOODSCHAPPENLIJST ]-")
+for key, value in boodschappen.items():
+    print(value, "x", key )
+print("-----------------------")
