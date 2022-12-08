@@ -1,7 +1,7 @@
 boodschappen = {}
 
 while True:
-    item = input("Wat wil je toevoegen? ")
+    item = input("Wat wil je toevoegen? ").lower()
     aantal = int(input("Hoeveel wil je er hebben? "))
     
     if item in boodschappen.keys():
@@ -9,8 +9,8 @@ while True:
     else:
         boodschappen.update({item : aantal})
 
-    vraag = input("Wil je nog iets toevoegen? ")
-    if vraag in("n", "no"):
+    vraag = input("Wil je nog iets toevoegen? ").lower()
+    if vraag in("n", "no", "nee", "ne"):
         break
 
 print("-[ BOODSCHAPPENLIJST ]-")
