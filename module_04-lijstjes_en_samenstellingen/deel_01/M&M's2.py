@@ -1,4 +1,3 @@
-from collections import Counter
 import random
 
 kleuren = ["rood", "blauw", "groen", "geel", "bruin", "zwart"]
