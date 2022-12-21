@@ -4,7 +4,7 @@ kleuren = []
 
 kleuren = [item['color'] for item in fruitmand]
 
-print("Yellow, Geen, Orange, Red, Brown\n")
+print("yellow, green, orange, red, brown\n")
 while True:
     vraagKleur = input("Kies een kleur uit. ")
     if vraagKleur in kleuren:

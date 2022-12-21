@@ -1,10 +1,14 @@
 from fruitmand import fruitmand
 
-fruitmand.remove({
-    'name' : 'druif',
-    'weight' : 5,
-    'color' : 'red',
-    'round' : True
-})
+for item in fruitmand.copy():
+    if item.get('name') == 'druif':
+        fruitmand.remove(item)
+
+kleuren = []
+
 for x in range(len(fruitmand)):
-    print(fruitmand[x]['color'])
+    kleuren.append(fruitmand[x]['color'])
+
+verschillendeKleuren = [*set(kleuren)]
+
+print(verschillendeKleuren)

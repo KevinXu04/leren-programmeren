@@ -9,5 +9,11 @@ watermeloen = {
 
 fruitmand.append(watermeloen)
 
+alleGewichten = []
+
 for x in range(len(fruitmand)):
-    print(fruitmand[x]['weight'])
+    alleGewichten.append(fruitmand[x]['weight'])
+
+totaalGewicht = sum(alleGewichten)
+
+print(totaalGewicht)
