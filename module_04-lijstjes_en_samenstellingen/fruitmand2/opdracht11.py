@@ -1,7 +1,5 @@
 from fruitmand import fruitmand
 
-kleuren = []
-
 kleuren = [item['color'] for item in fruitmand]
 
 print("yellow, green, orange, red, brown\n")
