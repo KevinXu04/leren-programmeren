@@ -1,0 +1,44 @@
+lijstnamen
+lijstloten
+dictlijstloten
+number
+
+while true
+    meernamen is false
+    while true
+        vraagnamen = input "Geef een naam op."
+        lijstnamen append
+        lijstloten append
+        if len lijstnamen is groter dan of gelijk aan
+            meer = input "Wil je meer namen toevoegen?"
+            if meer is nee
+                break
+            else
+                meernamen is true
+    if meernamen is false
+        break
+
+nogeenkeer is true
+
+
+while lijstnamen 
+    try
+        if lijstnamen[0] is niet gelijk aan lijstloten[0]
+            if in de dictionary list lijstnamen[0] en lijstloten[0] niet in dictlijstloten zit
+                dictlijstloten.append lijstnamen[0] en lijstloten[0]
+                delete lijstloten[0]
+                delete lijstnamen[0]
+                if lijstnamen leeg is
+                    break
+            else
+                random shuffle lijstloten
+        else
+            random shuffle lijstloten
+    except
+        if nogeenkeer is waar
+            maak dictlijstloten leeg
+            continue
+
+
+
+print dictlijstloten
