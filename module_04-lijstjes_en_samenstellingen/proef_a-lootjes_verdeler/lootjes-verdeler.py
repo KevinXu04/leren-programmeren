@@ -15,7 +15,7 @@ while True:
             if meer == "nee":
                 break
             else:
-                meerNamen == True
+                meerNamen = True
     if meerNamen == False:
         break
 
@@ -23,23 +23,11 @@ nogEenkeer = True
 dictLijstLoten = []
 
 while lijstNamen:
-    try:
-        if lijstNamen[0] != lijstLoten[0]:
-            if {lijstNamen[0]: lijstLoten[0]} not in dictLijstLoten:
-                dictLijstLoten.append({lijstNamen[0]: lijstLoten[0]})
-                del lijstLoten[0]
-                del lijstNamen[0]
-                print(lijstLoten)
-                print(lijstNamen)
-                if lijstNamen == False:
-                    break
-            else:
-                random.shuffle(lijstLoten)
-        else:
-            random.shuffle(lijstLoten)
-    except:
-        if nogEenkeer:
-            dictLijstLoten.clear()
-            continue
+    if lijstNamen[0] != lijstLoten[0]:
+        dictLijstLoten.append({lijstNamen[0]: lijstLoten[0]})
+        del lijstLoten[0]
+        del lijstNamen[0]
+    else:
+        random.shuffle(lijstLoten)
 
 print(dictLijstLoten)

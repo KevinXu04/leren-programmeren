@@ -22,22 +22,12 @@ nogeenkeer is true
 
 
 while lijstnamen 
-    try
-        if lijstnamen[0] is niet gelijk aan lijstloten[0]
-            if in de dictionary list lijstnamen[0] en lijstloten[0] niet in dictlijstloten zit
-                dictlijstloten.append lijstnamen[0] en lijstloten[0]
-                delete lijstloten[0]
-                delete lijstnamen[0]
-                if lijstnamen leeg is
-                    break
-            else
-                random shuffle lijstloten
-        else
-            random shuffle lijstloten
-    except
-        if nogeenkeer is waar
-            maak dictlijstloten leeg
-            continue
+    if eerste van lijstnamen niet gelijk is aan de eerste van lijstloten
+        dictlijstloten append de eerste van lijstnamen en de eerste van lijstloten
+        delete de eerste van lijstnamen
+        delete de eerste van lijstloten
+    else
+        random shuffle lijstloten
 
 
 
