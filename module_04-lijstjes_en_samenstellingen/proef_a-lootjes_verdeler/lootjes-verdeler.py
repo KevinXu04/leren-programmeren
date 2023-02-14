@@ -1,25 +1,18 @@
 import random
 
 lijstNamen = []
-lijstLoten = []
+
 
 
 while True:
-    meerNamen = False
-    while True:
-        vraagNamen = input("Geef een naam op. \n")
-        lijstNamen.append(vraagNamen)
-        lijstLoten.append(vraagNamen)
-        if len(lijstNamen) >= 3:
-            meer = input("Wil je meer namen toevoegen? \n")
-            if meer == "nee":
-                break
-            else:
-                meerNamen = True
-    if meerNamen == False:
-        break
+    vraagNamen = input("Geef een naam op. \n")
+    lijstNamen.append(vraagNamen)
+    if len(lijstNamen) >= 3:
+        meer = input("Wil je meer namen toevoegen? \n")
+        if meer == "nee":
+            break
+lijstLoten = lijstNamen.copy()
 
-nogEenkeer = True
 dictLijstLoten = []
 
 while lijstNamen:

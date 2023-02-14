@@ -1,33 +1,27 @@
 lijstnamen
 lijstloten
 dictlijstloten
-number
-
-while true
-    meernamen is false
-    while true
-        vraagnamen = input "Geef een naam op."
-        lijstnamen append
-        lijstloten append
-        if len lijstnamen is groter dan of gelijk aan
-            meer = input "Wil je meer namen toevoegen?"
-            if meer is nee
-                break
-            else
-                meernamen is true
-    if meernamen is false
-        break
-
-nogeenkeer is true
 
 
-while lijstnamen 
-    if eerste van lijstnamen niet gelijk is aan de eerste van lijstloten
-        dictlijstloten append de eerste van lijstnamen en de eerste van lijstloten
-        delete de eerste van lijstnamen
-        delete de eerste van lijstloten
-    else
-        random shuffle lijstloten
+
+herhaal
+    naam = voer in "Geef een naam op."
+    als naam niet voorkomt in lijstnamen
+        naam toevoegen aan lijstnamen
+        naam toevoegen aan lijstloten
+    als de lengte van lijstnamen is groter dan of gelijk aan 3
+        meer = voer in "Wil je meer namen toevoegen?"
+        als meer is nee
+            stop de herhaal
+
+
+zolang lijstnamen niet leeg
+    als eerste van lijstnamen niet gelijk is aan de eerste van lijstloten
+        voeg een combinatie van de eerste van lijstnamen en de eerste van lijstloten aan dictlijstloten
+        verwijder de eerste van lijstnamen
+        verwijder de eerste van lijstloten
+    anders
+        schud door elkaar lijstloten
 
 
 
