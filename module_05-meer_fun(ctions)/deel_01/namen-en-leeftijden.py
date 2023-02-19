@@ -4,13 +4,14 @@ def dictionary():
     return {"name": name, "age": age}
 
 info = []
+herhaal = True
 
-while True:
-    dictInfo = dictionary()
-    info.append(dictInfo)
+while herhaal:
+
+    info.append(dictionary())
     doorgaan = input("Toets enter om door te gaan of stop om te printen: \n")
     if doorgaan == "stop":
-        break
+        herhaal = False
 
 for x in info:
     print(f"{x['name']} is {x['age']} jaar oud.")

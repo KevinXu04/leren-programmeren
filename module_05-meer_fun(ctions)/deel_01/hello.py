@@ -1,6 +1,6 @@
 def hello(number):
-    for x in range(number):
-        print(f"Hello from function town {x+1}!")
+    for x in range(1, number+1):
+        print(f"Hello from function town {x}!")
 
 
 hello(7)
