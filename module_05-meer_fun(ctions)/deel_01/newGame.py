@@ -135,12 +135,12 @@ def updateScore(win, score, totalHealPotions):
         print("You have found a treasure chest! You found 5 healing potions!\n")
         totalHealPotions += 5
     elif score == -1:
-        print("You fell into a trap and lost 1 point.\n")
-        score -= 1
+        print("You fell into a trap and lost 2 point.\n")
+        score -= 2
     return score
 
 def playGame():
-    score = 4
+    score = 0
     gameOver = False
     playerHP = random.randint(25, 40)
     totalHealPotions = 3

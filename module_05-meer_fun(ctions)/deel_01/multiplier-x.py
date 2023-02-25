@@ -4,4 +4,6 @@ def tafel(cijfer):
     for x in range(1, 11):
         print(f"{x} x {cijfer} = {x*cijfer}")
 
+cijfer = 7
+print("kevinhcweuydgewiuedbiweydhwuifdheyiugewyufgwhjgf")
 tafel(getal)
