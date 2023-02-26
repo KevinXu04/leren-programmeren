@@ -137,21 +137,27 @@ def getMaxAmountOfNightsInInn(leftoverGold:float, people:int, horses:int) -> int
     humanInnCosts = silver2gold(people * COST_INN_HUMAN_SILVER_PER_NIGHT)
     horseInnCosts = copper2gold(horses * COST_INN_HORSE_COPPER_PER_NIGHT)
 
-    return leftoverGold // (humanInnCosts + horseInnCosts)
+    return leftoverGold / (humanInnCosts + horseInnCosts)
 
 def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
     humanInnCosts = silver2gold(people * COST_INN_HUMAN_SILVER_PER_NIGHT)
     horseInnCosts = copper2gold(horses * COST_INN_HORSE_COPPER_PER_NIGHT)
-    
+
     return round(nightsInInn * (humanInnCosts + horseInnCosts), 2)
 
 ##################### M04.D02.O12 #####################
 
 def getInvestorsCuts(profitGold:float, investors:list) -> list:
-    pass
+    lst = []
+    for investor in getInterestingInvestors(investors):
+        lst.append(round(investor['profitReturn'] / 100 * profitGold, 2))
+    return lst
 
 def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> float:
-    pass
+    for gold in investorsCuts:
+        profitGold -= gold
+    
+    return round(profitGold / fellowship, 2)
 
 ##################### M04.D02.O13 #####################
 
