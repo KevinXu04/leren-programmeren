@@ -90,7 +90,13 @@ def getItemsValueInGold(items:list) -> float:
 ##################### M04.D02.O8 #####################
 
 def getCashInGoldFromPeople(people:list) -> float:
-    pass
+    totalGold = 0
+    for cash in people:
+        totalGold += copper2gold(cash['cash']['copper'])
+        totalGold += silver2gold(cash['cash']['silver'])
+        totalGold += cash['cash']['gold']
+        totalGold += platinum2gold(cash['cash']['platinum'])
+    return round(totalGold, 2)
 
 ##################### M04.D02.O9 #####################
 
