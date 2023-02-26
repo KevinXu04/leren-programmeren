@@ -65,10 +65,27 @@ def getTotalRentalCost(horses:int, tents:int) -> float:
 ##################### M04.D02.O7 #####################
 
 def getItemsAsText(items:list) -> str:
-    pass
+    lst = []
+    for item in items:
+        itemText = f"{item['amount']}{item['unit']} {item['name']}"
+        lst.append(itemText)
+    return ', '.join(lst)
 
 def getItemsValueInGold(items:list) -> float:
-    pass
+    gold = 0
+    for item in items:
+        if item['price']['type'] == 'copper':
+            gold += copper2gold(item['price']['amount'] * item['amount'])
+
+        if item['price']['type'] == 'silver':
+            gold += silver2gold(item['price']['amount']* item['amount'])
+
+        if item['price']['type'] == 'gold':
+            gold += item['price']['amount'] * item['amount']
+
+        if item['price']['type'] == 'platinum':
+            gold += platinum2gold(item['price']['amount']* item['amount'])
+    return gold
 
 ##################### M04.D02.O8 #####################
 
