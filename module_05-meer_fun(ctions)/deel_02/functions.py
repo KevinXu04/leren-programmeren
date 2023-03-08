@@ -77,13 +77,13 @@ def getItemsValueInGold(items:list) -> float:
         if item['price']['type'] == 'copper':
             gold += copper2gold(item['price']['amount'] * item['amount'])
 
-        if item['price']['type'] == 'silver':
+        elif item['price']['type'] == 'silver':
             gold += silver2gold(item['price']['amount']* item['amount'])
 
-        if item['price']['type'] == 'gold':
+        elif item['price']['type'] == 'gold':
             gold += item['price']['amount'] * item['amount']
 
-        if item['price']['type'] == 'platinum':
+        elif item['price']['type'] == 'platinum':
             gold += platinum2gold(item['price']['amount']* item['amount'])
     return gold
 
@@ -137,7 +137,7 @@ def getMaxAmountOfNightsInInn(leftoverGold:float, people:int, horses:int) -> int
     humanInnCosts = silver2gold(people * COST_INN_HUMAN_SILVER_PER_NIGHT)
     horseInnCosts = copper2gold(horses * COST_INN_HORSE_COPPER_PER_NIGHT)
 
-    return leftoverGold / (humanInnCosts + horseInnCosts)
+    return round(leftoverGold / (humanInnCosts + horseInnCosts))
 
 def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
     humanInnCosts = silver2gold(people * COST_INN_HUMAN_SILVER_PER_NIGHT)
@@ -167,28 +167,32 @@ def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:lis
 
     # haal de juiste inhoud op
     adventuringFriends = getAdventuringFriends(friends) # Alle vrienden die op avontuur willen.
+
     interestingInvestors = getInterestingInvestors(investors) # Investeerders die geïnteresseerd zijn.
     adventuringInvestors = getAdventuringInvestors(investors) # Geïnteresseerde investeerders die op avontuur willen.
+
     investorsCuts = getInvestorsCuts(profitGold, investors) # Hier berekent hoeveel geld per investeerder krijgt.
-    goldCut = 0.0
+
+    goldCut = profitGold - sum(investorsCuts) # Goud dat overblijft na de verdeling van de investors
+    endGold = 0
 
     # verdeel de uitkomsten
-    for person in people: # 
+    for person in people: 
         name = person['name'] # Haalt de naam uit.
         startGold = getCashInGoldFromPeople([person]) # Berekent hoeveel goud hij nu bij zich heeft.
 
-
-        if person['name'] in interestingInvestors:
-            goldCut += investorsCuts['']
-        else:
-            endGold = 'test'
-
-        endGold = startGold + goldCut
+        if person in interestingInvestors or person in adventuringInvestors: # Hoeveel elk investor krijgt
+            endGold = startGold + investorsCuts[investors.index(person)]
+        elif person in adventuringFriends: # Hoeveel elk vrieAnd krijgt
+            endGold = startGold + (goldCut / len(people)) - 10 # Elke vriend geeft 10 gold aan de main character
+            earnings[0]['end'] += 10 # Main character krijgt 10 gold van elk vriend
+        else: # Hoeveel de maincharacter krijgt
+            endGold += startGold + (goldCut / len(people))
 
         earnings.append({
             'name'   : name,
             'start'  : startGold,
-            'end'    : name
+            'end'    : round(endGold, 2)
         })
 
     return earnings
