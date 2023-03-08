@@ -162,7 +162,36 @@ def getAdventurerCut(profitGold:float, investorsCuts:list, fellowship:int) -> fl
 ##################### M04.D02.O13 #####################
 
 def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:list) -> list:
-    pass
+    people = [mainCharacter] + friends + investors # Alle mensen.
+    earnings = []
+
+    # haal de juiste inhoud op
+    adventuringFriends = getAdventuringFriends(friends) # Alle vrienden die op avontuur willen.
+    interestingInvestors = getInterestingInvestors(investors) # Investeerders die geïnteresseerd zijn.
+    adventuringInvestors = getAdventuringInvestors(investors) # Geïnteresseerde investeerders die op avontuur willen.
+    investorsCuts = getInvestorsCuts(profitGold, investors) # Hier berekent hoeveel geld per investeerder krijgt.
+    goldCut = 0.0
+
+    # verdeel de uitkomsten
+    for person in people: # 
+        name = person['name'] # Haalt de naam uit.
+        startGold = getCashInGoldFromPeople([person]) # Berekent hoeveel goud hij nu bij zich heeft.
+
+
+        if person['name'] in interestingInvestors:
+            goldCut += investorsCuts['']
+        else:
+            endGold = 'test'
+
+        endGold = startGold + goldCut
+
+        earnings.append({
+            'name'   : name,
+            'start'  : startGold,
+            'end'    : name
+        })
+
+    return earnings
 
 ##################### view functions #####################
 def print_colorvars(txt:str='{}', vars:list=[], color:str='yellow') -> None:
