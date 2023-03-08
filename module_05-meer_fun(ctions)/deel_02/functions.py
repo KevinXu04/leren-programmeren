@@ -187,7 +187,7 @@ def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:lis
             endGold = startGold + (goldCut / len(people)) - 10 # Elke vriend geeft 10 gold aan de main character
             earnings[0]['end'] += 10 # Main character krijgt 10 gold van elk vriend
         else: # Hoeveel de maincharacter krijgt
-            endGold += startGold + (goldCut / len(people))
+            endGold += startGold + (goldCut / len([mainCharacter] + adventuringFriends))
 
         earnings.append({
             'name'   : name,
