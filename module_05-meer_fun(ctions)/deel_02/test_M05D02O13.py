@@ -109,6 +109,7 @@ if getEarnigs(300, testMainCharacter1, friendsTestList1, inverstorsTestList1) !=
     print(getEarnigs(300, testMainCharacter1, friendsTestList1, inverstorsTestList1))
 else:
     print_colorvars(vars=['Test 5 is correct'], color='green')
+    print(getEarnigs(300, testMainCharacter1, friendsTestList1, inverstorsTestList1))
 
 friendsTestList2 = [{
     'name' : 'TestFriend1',
@@ -188,6 +189,7 @@ result7 = [
 
 if getEarnigs(500, testMainCharacter2, friendsTestList2, inverstorsTestList2) != result7:
     print_colorvars(vars=['Test 7 is False'], color='red')
+    print(getEarnigs(500, testMainCharacter2, friendsTestList2, inverstorsTestList2))
 else:
     print_colorvars(vars=['Test 7 is correct'], color='green')
 
@@ -234,5 +236,6 @@ result8 = [
 
 if getEarnigs(120, testMainCharacter2, friendsTestList1, inverstorsTestList3) != result8:
     print_colorvars(vars=['Test 8 is False'], color='red')
+    print(getEarnigs(120, testMainCharacter2, friendsTestList1, inverstorsTestList3))
 else:
     print_colorvars(vars=['Test 8 is correct'], color='green')

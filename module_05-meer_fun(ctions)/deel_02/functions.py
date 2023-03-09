@@ -181,13 +181,26 @@ def getEarnigs(profitGold:float, mainCharacter:dict, friends:list, investors:lis
         name = person['name'] # Haalt de naam uit.
         startGold = getCashInGoldFromPeople([person]) # Berekent hoeveel goud hij nu bij zich heeft.
 
-        if person in interestingInvestors or person in adventuringInvestors: # Hoeveel elk investor krijgt
+        if person in interestingInvestors and person in adventuringInvestors: # Hoeveel goud een investeerder krijg die geïnteresseerd is en mee gaat op avontuur
+            endGold = startGold + investorsCuts[investors.index(person)] + goldCut / len([mainCharacter] + adventuringFriends + adventuringInvestors)
+
+        elif person in interestingInvestors: # Hoeveel goud geïnteresseerde investeerders krijgen
             endGold = startGold + investorsCuts[investors.index(person)]
-        elif person in adventuringFriends: # Hoeveel elk vrieAnd krijgt
-            endGold = startGold + (goldCut / len(people)) - 10 # Elke vriend geeft 10 gold aan de main character
-            earnings[0]['end'] += 10 # Main character krijgt 10 gold van elk vriend
+
+        elif person in investors and person not in interestingInvestors: # Wat investeerders krijgen die niks mee te maken hebben
+            endGold = startGold
+        
+        elif person in adventuringFriends: # Hoeveel goud vrienden krijgen die op avontuur gaan
+            endGold = startGold + (goldCut / len([mainCharacter] + adventuringFriends + adventuringInvestors)) - 10 
+            earnings[0]['end'] += 10
+
+        elif person in friends and person not in adventuringFriends: # Hoeveel goud vrienden krijgen die je niet deelt
+            endGold = startGold
+
         else: # Hoeveel de maincharacter krijgt
-            endGold += startGold + (goldCut / len([mainCharacter] + adventuringFriends))
+            endGold += startGold + goldCut / len([mainCharacter] + adventuringFriends + adventuringInvestors)
+        
+
 
         earnings.append({
             'name'   : name,
