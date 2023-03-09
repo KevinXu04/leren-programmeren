@@ -14,7 +14,4 @@ Ik ga als eerst de Tank opdracht doen. Zodra ik de Tank opdracht gemaakt hebt ga
 9 Maart 2023
 
 Python:
-Gister op school was ik niet toegekomen bij Treasure Hunt. Ik had thuis de functie 'getEarnigs' verder afgemaakt. Ik heb nu een error gevonden in test? Dus ik ga dat vragen aan meneer Slemmer. Als ik dat opgelost heb ga ik Treasure helemaal afmaken.
-
-Javascript:
-Na dat ik klaar ben met Treasure Hunt ga ik verder met Buttons 3.0. Ik ga zorgen dat de aantal buttons per rij worden aangetoond op de HTML pagina met Javascript.
+Gister op school was ik niet toegekomen bij Treasure Hunt. Ik had thuis de functie 'getEarnigs' verder afgemaakt. Ik heb nu een error gevonden in test? Dus ik ga dat vragen aan meneer Slemmer. Als ik dat opgelost heb ga ik Treasure helemaal afmaken. Ik ga dan beginnen met een flowchart maken van het ijssalon.
