@@ -1,34 +1,22 @@
-vraagBolletjes = True
-keuzeBoolean = True
+from functions import *
+
 nogEen = True
+eersteKeer = True
+keuzeBoolean = True
 
 while nogEen:
-    while vraagBolletjes:
-        aantalBolletjes = int(input("Hoeveel bolletjes wilt u? "))
+    if eersteKeer:
+        print("Welkom bij Papi Gelato je mag alle smaken kiezen zolang het maar vanille ijs is.")
 
-        if aantalBolletjes >= 1 and aantalBolletjes <= 3:
-            while keuzeBoolean:
-                keuze = input(f"Wil u deze {aantalBolletjes} in een hoorntje of een bakje? ")
-                if keuze in ("hoorntje", "bakje"):
-                    keuzeBoolean = False
-                    vraagBolletjes = False
-                else:
-                    print("Sorry die ken ik niet...")
-        elif aantalBolletjes >= 4 and aantalBolletjes <= 8:
-            print(f"Dan krijgt u van mij een bakje met {aantalBolletjes} bolletjes ")
-            keuze = "bakje"
-            vraagBolletjes = False
-        elif aantalBolletjes > 8:
-            print("Sorry, zulke grote bakken hebben we niet ")
+    while True:
+        try:
+            aantal = int(input("Hoeveel bolletjes wilt u? "))
+            break
+        except:
+            print("Sorry dat snap ik niet...")
 
-    print(f"Hier is uw {keuze} met {aantalBolletjes} bolletje(s) ")
+    aantalBolletjes(aantal, keuzeBoolean)
 
-    meer = input("Wilt u nog meer bestellen? ")
-    if meer == "y":
-        vraagBolletjes = True
-        continue
-    elif meer == "n":
-        print("Bedankt en tot ziens! ")
-        nogEen = False
-    else:
-        print("Sorry dat snap ik niet")
+    nogEen, eersteKeer, keuzeBoolean = meerBestellen(nogEen, eersteKeer, keuzeBoolean)
+
+
