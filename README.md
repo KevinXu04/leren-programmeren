@@ -1,5 +1,13 @@
 # Kevin Xiu
 
+# 13 Maart 2023
+
+## Javascript:
+Buttons 3.0 afmaken.
+
+## HTML:
+Wireframe voor desktop versie maken
+
 # 10 Maart 2023
 
 ## Python:
