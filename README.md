@@ -13,7 +13,7 @@ Buttons 3.0 afmaken.
 Progress: ✔
 
 ## HTML:
-Wireframe voor desktop versie maken 
+Wireframe voor desktop versie maken.
 Progress: ✔
 
 # 10 Maart 2023
