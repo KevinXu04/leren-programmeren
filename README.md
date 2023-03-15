@@ -1,5 +1,11 @@
 # Kevin Xiu
 
+# 15 Maart 2023
+
+## Python:
+CJV 21 krijgen en dan verder werken. 
+Progress: 
+
 # 13 Maart 2023
 
 ## Javascript:
@@ -7,7 +13,7 @@ Buttons 3.0 afmaken.
 Progress: ✔
 
 ## HTML:
-Wireframe voor desktop versie maken 
+Wireframe voor desktop versie maken.
 Progress: ✔
 
 # 10 Maart 2023
