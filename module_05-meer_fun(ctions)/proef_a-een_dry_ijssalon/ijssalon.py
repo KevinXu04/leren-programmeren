@@ -2,7 +2,7 @@ from functions import *
 
 nogEen = True
 
-print("Welkom bij Papi Gelato je mag alle smaken kiezen zolang het maar vanille ijs is.")
+print("Welkom bij Papi Gelato.")
 
 lst = [{'name': 'bolletje', 'aantal': 0, 'prijs': 1.10},
         {'name': 'hoorntje', 'aantal': 0, 'prijs': 1.25},
