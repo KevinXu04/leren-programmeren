@@ -4,7 +4,7 @@
 
 ## Python:
 CJV 21 krijgen en dan verder werken. 
-Progress: 
+Progress: ✔
 
 # 13 Maart 2023
 
