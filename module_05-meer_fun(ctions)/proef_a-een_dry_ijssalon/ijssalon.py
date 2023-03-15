@@ -6,8 +6,10 @@ print("Welkom bij Papi Gelato je mag alle smaken kiezen zolang het maar vanille 
 
 while nogEen:
 
-    bakjeOfHoorntje(aantalBolletjes())
+    aantal, keuze = bakjeOfHoorntje(aantalBolletjes())
 
     nogEen = meerBestellen(nogEen)
+
+    bon(aantal, keuze, nogEen)
 
 
