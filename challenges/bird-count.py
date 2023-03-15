@@ -15,6 +15,7 @@ def getBirdByKey (birds: list, key: str) -> str:
     for bird in birds:
         if key == bird['key']:
             return bird
+    return None
 
 # 3
 key = ''
