@@ -9,7 +9,8 @@ def aantalBolletjes():
         except:
             print("Sorry dat snap ik niet...")
 
-def bakjeOfHoorntje(aantal, keuzeBoolean):
+def bakjeOfHoorntje(aantal):
+    keuzeBoolean = True
     if aantal >= 1 and aantal <= 3:
         while keuzeBoolean:
             keuze = input(f"Wil u deze {aantal} bolletje(s) in een hoorntje of een bakje? ")
@@ -22,18 +23,17 @@ def bakjeOfHoorntje(aantal, keuzeBoolean):
         keuze = "bakje"
 
     print(f"Hier is uw {keuze} met {aantal} bolletje(s) ")
-    return aantal, keuzeBoolean
+    return aantal
 
-def meerBestellen(nogEen, keuzeBoolean):
+def meerBestellen(nogEen):
     while True:
         meer = input("Wilt u nog meer bestellen? ")
         if meer == "y":
-            keuzeBoolean = True
-            return nogEen, keuzeBoolean
+            return nogEen
         elif meer == "n":
             print("Bedankt en tot ziens! ")
             nogEen = False
-            return nogEen, keuzeBoolean
+            return nogEen
         else:
             print("Sorry dat snap ik niet")
 
