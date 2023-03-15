@@ -1,5 +1,11 @@
 # Kevin Xiu
 
+# 15 Maart 2023
+
+## Python:
+CJV 21 krijgen en dan verder werken. 
+Progress: 
+
 # 13 Maart 2023
 
 ## Javascript:
