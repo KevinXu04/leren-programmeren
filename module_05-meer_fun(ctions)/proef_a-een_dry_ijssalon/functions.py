@@ -11,7 +11,7 @@ def aantalBolletjes(particOfZakelijk):
                 aantalLiter = int(input("Hoeveel liter ijs wilt u? "))
                 return aantalLiter
         except:
-            print("Sorry dat snap ik niet...")
+            print("Sorry dat is geen optie die we aanbieden...")
 
 def bakjeOfHoorntje(aantal):
     keuzeBoolean = True
@@ -21,7 +21,7 @@ def bakjeOfHoorntje(aantal):
             if keuze in ("hoorntje", "bakje"):
                 keuzeBoolean = False
             else:
-                print("Sorry die ken ik niet...")
+                print("Sorry dat is geen optie die we aanbieden...")
     elif aantal >= 4 and aantal <= 8:
         print(f"Dan krijgt u van mij een bakje met {aantal} bolletjes ")
         keuze = "bakje"
@@ -48,7 +48,7 @@ def smaakEnTopping(aantal, lst, tekst):
                 keuze = lst[3]['name']
                 keuzeBoolean = False
             else:
-                print("Sorry dat snap ik niet...")
+                print("Sorry dat is geen optie die we aanbieden...")
 
             for item in lst:
                 if keuze == item['name']:
@@ -66,7 +66,7 @@ def meerBestellen():
         elif meer == "n":
             return False
         else:
-            print("Sorry dat snap ik niet")
+            print("Sorry dat is geen optie die we aanbieden...")
 
 def bolletjesEnKeuzeBerekening(aantal, keuze, lst):
     lst[0]['aantal'] += aantal

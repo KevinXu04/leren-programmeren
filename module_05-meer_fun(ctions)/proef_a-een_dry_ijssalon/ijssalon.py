@@ -33,7 +33,7 @@ while True:
     if particOfZakelijk in ("1", "2"):
         break
     else:
-        print("Sorry dat snap ik niet...")
+        print("Sorry dat is geen optie die we aanbieden...")
 
 while nogEen:
     if particOfZakelijk == '1': # Particulier
