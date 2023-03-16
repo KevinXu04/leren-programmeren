@@ -13,7 +13,6 @@ smaakLstZakelijk = [{'name': 'l. aardbei', 'aantal': 0, 'prijs': 9.80, 'key': 'a
 
 smaakLstKlant = [{'name': 'b. aardbei', 'aantal': 0, 'prijs': 0.95, 'key': 'a'},
              {'name': 'b. chocolade', 'aantal': 0, 'prijs': 0.95, 'key': 'c'},
-             {'name': 'b. munt', 'aantal': 0, 'prijs': 0.95, 'key': 'm'},
              {'name': 'b. vanille', 'aantal': 0, 'prijs': 0.95, 'key': 'a'}]
 
 toppingLst = [{'name': 'geen', 'aantal': 0, 'prijs': 0, 'key': 'a'},
