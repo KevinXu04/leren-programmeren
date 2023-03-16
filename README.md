@@ -3,7 +3,7 @@
 # 16 Maart 2023
 
 ## Python:
-Toppings toevoegen van dry ijssalon en dan verder gaan met python
+Toppings toevoegen van dry ijssalon en dan verder gaan met python. CJV 22 krijgen.
 Progress: 
 
 # 15 Maart 2023
