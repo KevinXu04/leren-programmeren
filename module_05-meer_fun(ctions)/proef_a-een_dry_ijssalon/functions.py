@@ -78,6 +78,7 @@ def bolletjesEnKeuzeBerekening(aantal, keuze, lst):
     return lst
 
 def bon(lst, smaakLst, toppings, particOfZakelijk):
+    BTW = 0.06
     totaalPrijs = 0
     totaalPrijsToppings = 0
     lst.extend(smaakLst)
@@ -93,16 +94,15 @@ def bon(lst, smaakLst, toppings, particOfZakelijk):
     elif lst[3]['aantal'] > 0:
         toppings[3]['prijs'] = 0.6
     
-    for item in toppings:   
-        if item['aantal']: 
-            totaalPrijsToppings =+ item['aantal'] * item['prijs']
+    for item in toppings:
+        totaalPrijsToppings += item['aantal'] * item['prijs']
 
     totaalPrijs += totaalPrijsToppings
 
-    btw = 0.09 * totaalPrijs
+    btw = BTW * totaalPrijs
     
     if totaalPrijsToppings:
-        print(f"topping               € {'%.2f' % totaalPrijsToppings}\n")
+        print(f"toppings              € {'%.2f' % totaalPrijsToppings}\n")
     print("-------------------------------")
     print(f"totaal                 € {'%.2f' % totaalPrijs}")
     if particOfZakelijk == "2":

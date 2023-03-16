@@ -28,7 +28,7 @@ toppingTekst = "Wat voor topping wilt u: A) Geen, B) Slagroom, C) Sprinkels of D
 
 print("Welkom bij Papi Gelato.")
 while True:
-    particOfZakelijk = input("Bent u 1) een particuliere klant of 2) een zakelijke klant?")
+    particOfZakelijk = input("Bent u 1) een particuliere klant of 2) een zakelijkse klant?")
     if particOfZakelijk in ("1", "2"):
         break
     else:
