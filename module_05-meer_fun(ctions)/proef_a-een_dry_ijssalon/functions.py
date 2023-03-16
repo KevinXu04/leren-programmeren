@@ -1,11 +1,15 @@
-def aantalBolletjes():
+def aantalBolletjes(particOfZakelijk):
     while True:
         try:
-            aantal = int(input("Hoeveel bolletjes wilt u? "))
-            if aantal > 8:
-                print("Sorry, zulke grote bakken hebben we niet ")
-            else:
-                return aantal
+            if particOfZakelijk == '1':
+                aantal = int(input("Hoeveel bolletjes wilt u? "))
+                if aantal > 8:
+                    print("Sorry, zulke grote bakken hebben we niet ")
+                else:
+                    return aantal
+            elif particOfZakelijk == '2':
+                aantalLiter = int(input("Hoeveel liter ijs wilt u? "))
+                return aantalLiter
         except:
             print("Sorry dat snap ik niet...")
 
@@ -73,7 +77,7 @@ def bolletjesEnKeuzeBerekening(aantal, keuze, lst):
 
     return lst
 
-def bon(lst, smaakLst, toppings):
+def bon(lst, smaakLst, toppings, particOfZakelijk):
     totaalPrijs = 0
     totaalPrijsToppings = 0
     lst.extend(smaakLst)
@@ -84,30 +88,23 @@ def bon(lst, smaakLst, toppings):
             print(f"{index['name']} {index['aantal']} x € {'%.2f' % (index['prijs'])} = € {'%.2f' % (index['aantal'] * index['prijs'])}")
         totaalPrijs += index['aantal'] * index['prijs']
 
-    # if lst[1]['aantal'] > 0:
-    #     toppings[3]['prijs'] = 0.6
-    #     lst[1]['aantal'] = 0
-    #     totaalPrijsToppings += toppings[3]['prijs'] * toppings[3]['aantal']
-    # if lst[2]['aantal'] > 0:
-    #     toppings[3]['prijs'] = 0.9
-    #     lst[2]['aantal'] = 0
-    #     totaalPrijsToppings += toppings[3]['prijs'] * toppings[3]['aantal']
-
-
     if lst[2]['aantal'] > 0:
         toppings[3]['prijs'] = 0.9
     elif lst[3]['aantal'] > 0:
         toppings[3]['prijs'] = 0.6
-
     
     for item in toppings:   
         if item['aantal']: 
             totaalPrijsToppings =+ item['aantal'] * item['prijs']
 
     totaalPrijs += totaalPrijsToppings
+
+    btw = 0.09 * totaalPrijs
     
     if totaalPrijsToppings:
         print(f"topping               € {'%.2f' % totaalPrijsToppings}\n")
     print("-------------------------------")
-    print(f"totaal                 € {'%.2f' % totaalPrijs}\n")
+    print(f"totaal                 € {'%.2f' % totaalPrijs}")
+    if particOfZakelijk == "2":
+        print(f"btw (9%)               € {'%.2f' % btw}")
     print("Bedankt en tot ziens! ")

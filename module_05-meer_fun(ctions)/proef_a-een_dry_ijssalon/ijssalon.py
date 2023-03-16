@@ -2,36 +2,58 @@ from functions import *
 
 nogEen = True
 
-print("Welkom bij Papi Gelato.")
-
 lst = [{'name': 'bolletje', 'aantal': 0, 'prijs': 1.10},
         {'name': 'hoorntje', 'aantal': 0, 'prijs': 1.25},
         {'name': 'bakje', 'aantal': 0, 'prijs': 0.75}]
 
-smaakLst = [{'name': 'aardbei', 'aantal': 0, 'prijs': 1.10, 'key': 'a'},
-             {'name': 'chocolade', 'aantal': 0, 'prijs': 1.10, 'key': 'c'},
-             {'name': 'munt', 'aantal': 0, 'prijs': 1.10, 'key': 'm'},
-             {'name': 'vanille', 'aantal': 0, 'prijs': 1.10, 'key': 'a'}]
+smaakLstZakelijk = [{'name': 'l. aardbei', 'aantal': 0, 'prijs': 9.80, 'key': 'a'},
+                     {'name': 'l. chocolade', 'aantal': 0, 'prijs': 9.80, 'key': 'c'},
+                     {'name': 'l. munt', 'aantal': 0, 'prijs': 9.80, 'key': 'm'},
+                     {'name': 'l. vanille', 'aantal': 0, 'prijs': 9.80, 'key': 'a'}]
+
+smaakLstKlant = [{'name': 'b. aardbei', 'aantal': 0, 'prijs': 1.10, 'key': 'a'},
+             {'name': 'b. chocolade', 'aantal': 0, 'prijs': 1.10, 'key': 'c'},
+             {'name': 'b. munt', 'aantal': 0, 'prijs': 1.10, 'key': 'm'},
+             {'name': 'b. vanille', 'aantal': 0, 'prijs': 1.10, 'key': 'a'}]
 
 toppingLst = [{'name': 'geen', 'aantal': 0, 'prijs': 0, 'key': 'a'},
              {'name': 'slagroom', 'aantal': 0, 'prijs': 0.50, 'key': 'b'},
              {'name': 'sprinkels', 'aantal': 0, 'prijs': 0.30, 'key': 'c'},
              {'name': 'caramel saus', 'aantal': 0, 'prijs': 0, 'key': 'd'}]
 
-smaakTekst = f"Welke smaak wilt u voor bolletje? A) Aardbei, B) Chocolade, C) Munt of D) Vanille?\n "
+smaakTekstZakelijk = f"Welke smaak wilt u? A) Aardbei, B) Chocolade, C) Munt of D) Vanille?\n "
+smaakTekstKlant = f"Welke smaak wilt u voor uw bolletje? A) Aardbei, B) Chocolade, C) Munt of D) Vanille?\n "
 toppingTekst = "Wat voor topping wilt u: A) Geen, B) Slagroom, C) Sprinkels of D) Caramel Saus?\n "
 
+# Hier begint de code
+
+print("Welkom bij Papi Gelato.")
+while True:
+    particOfZakelijk = input("Bent u 1) een particuliere klant of 2) een zakelijke klant?")
+    if particOfZakelijk in ("1", "2"):
+        break
+    else:
+        print("Sorry dat snap ik niet...")
+
 while nogEen:
-    aantal = aantalBolletjes()
+    if particOfZakelijk == '1': # Particulier
+        aantal = aantalBolletjes(particOfZakelijk)
 
-    keuze = bakjeOfHoorntje(aantal)
+        keuze = bakjeOfHoorntje(aantal)
 
-    smaakEnTopping(aantal, smaakLst, smaakTekst)
+        smaakEnTopping(aantal, smaakLstKlant, smaakTekstKlant) # Smaak
 
-    smaakEnTopping(aantal, toppingLst, toppingTekst)
+        smaakEnTopping(aantal, toppingLst, toppingTekst) # Topping
 
-    nogEen = meerBestellen()  
+        nogEen = meerBestellen()  
 
-    tempLst = bolletjesEnKeuzeBerekening(aantal, keuze, lst)
+        tempLst = bolletjesEnKeuzeBerekening(aantal, keuze, lst)
+    elif particOfZakelijk == '2': # Zakelijk
+        aantalLiter = aantalBolletjes(particOfZakelijk)
 
-bon(lst, smaakLst, toppingLst)
+        smaakEnTopping(aantalLiter, smaakLstZakelijk, smaakTekstZakelijk)
+        nogEen = False
+if particOfZakelijk == '1':
+    bon(lst, smaakLstKlant, toppingLst, particOfZakelijk)
+else:
+    bon(lst, smaakLstZakelijk, toppingLst, particOfZakelijk)
