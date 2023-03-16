@@ -1,5 +1,11 @@
 # Kevin Xiu
 
+# 16 Maart 2023
+
+## Python:
+Toppings toevoegen van dry ijssalon en dan verder gaan met python
+Progress: 
+
 # 15 Maart 2023
 
 ## Python:
