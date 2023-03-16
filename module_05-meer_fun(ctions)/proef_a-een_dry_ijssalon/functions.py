@@ -22,7 +22,7 @@ def bakjeOfHoorntje(aantal):
         print(f"Dan krijgt u van mij een bakje met {aantal} bolletjes ")
         keuze = "bakje"
 
-    print(f"Hier is uw {keuze} met {aantal} bolletje(s) ")
+    
     return keuze
 
 def smaakEnTopping(aantal, lst, tekst):
@@ -54,14 +54,13 @@ def smaakEnTopping(aantal, lst, tekst):
     return lst
         
 
-def meerBestellen(nogEen):
+def meerBestellen():
     while True:
         meer = input("Wilt u nog meer bestellen? ")
         if meer == "y":
-            return nogEen
+            return True
         elif meer == "n":
-            nogEen = False
-            return nogEen
+            return False
         else:
             print("Sorry dat snap ik niet")
 
@@ -80,7 +79,7 @@ def bon(lst, smaakLst, toppings):
     lst.extend(smaakLst)
 
     print('--------["Papi Gelato"]--------')
-    for index in lst:
+    for index in lst[1:]:
         if index['aantal']:
             print(f"{index['name']} {index['aantal']} x € {'%.2f' % (index['prijs'])} = € {'%.2f' % (index['aantal'] * index['prijs'])}")
         totaalPrijs += index['aantal'] * index['prijs']

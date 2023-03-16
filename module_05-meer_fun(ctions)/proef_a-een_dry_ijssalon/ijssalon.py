@@ -30,7 +30,7 @@ while nogEen:
 
     smaakEnTopping(aantal, toppingLst, toppingTekst)
 
-    nogEen = meerBestellen(nogEen)  
+    nogEen = meerBestellen()  
 
     tempLst = bolletjesEnKeuzeBerekening(aantal, keuze, lst)
 
