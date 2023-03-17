@@ -7,13 +7,13 @@ lst = [{'name': 'bolletje', 'aantal': 0, 'prijs': 1.10},
         {'name': 'bakje', 'aantal': 0, 'prijs': 0.75}]
 
 smaakLstZakelijk = [{'name': 'l. aardbei', 'aantal': 0, 'prijs': 9.80, 'key': 'a'},
-                     {'name': 'l. chocolade', 'aantal': 0, 'prijs': 9.80, 'key': 'c'},
-                     {'name': 'l. munt', 'aantal': 0, 'prijs': 9.80, 'key': 'm'},
-                     {'name': 'l. vanille', 'aantal': 0, 'prijs': 9.80, 'key': 'a'}]
+                     {'name': 'l. chocolade', 'aantal': 0, 'prijs': 9.80, 'key': 'b'},
+                     {'name': 'l. munt', 'aantal': 0, 'prijs': 9.80, 'key': 'c'},
+                     {'name': 'l. vanille', 'aantal': 0, 'prijs': 9.80, 'key': 'd'}]
 
 smaakLstKlant = [{'name': 'b. aardbei', 'aantal': 0, 'prijs': 0.95, 'key': 'a'},
-             {'name': 'b. chocolade', 'aantal': 0, 'prijs': 0.95, 'key': 'c'},
-             {'name': 'b. vanille', 'aantal': 0, 'prijs': 0.95, 'key': 'a'}]
+             {'name': 'b. chocolade', 'aantal': 0, 'prijs': 0.95, 'key': 'b'},
+             {'name': 'b. vanille', 'aantal': 0, 'prijs': 0.95, 'key': 'c'}]
 
 toppingLst = [{'name': 'geen', 'aantal': 0, 'prijs': 0, 'key': 'a'},
              {'name': 'slagroom', 'aantal': 0, 'prijs': 0.50, 'key': 'b'},
@@ -28,7 +28,7 @@ toppingTekst = "Wat voor topping wilt u: A) Geen, B) Slagroom, C) Sprinkels of D
 
 print("Welkom bij Papi Gelato.")
 while True:
-    particOfZakelijk = input("Bent u 1) een particuliere klant of 2) een zakelijkse klant?")
+    particOfZakelijk = input("Bent u 1) een particuliere klant of 2) een zakelijke klant? ")
     if particOfZakelijk in ("1", "2"):
         break
     else:
