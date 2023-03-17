@@ -1,5 +1,10 @@
 # Kevin Xiu
 
+# 17 Maart 2023
+
+## Python:
+CJV 23 krijgen en dan een begin maken van meesterproef.
+
 # 16 Maart 2023
 
 ## Python:
