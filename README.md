@@ -1,5 +1,16 @@
 # Kevin Xiu
 
+# Leerpaden Status:
+## Python:
+Meesterproef | MP.O1 - Keuze & Verantwoording
+
+## HTML & CSS:
+Afgerond. 
+https://kevinxu04.github.io/
+
+## Javscript
+Meesterproef | CJV 3
+
 # 21 Maart 2023
 
 ## Python:
