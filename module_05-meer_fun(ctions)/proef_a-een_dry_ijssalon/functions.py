@@ -1,4 +1,4 @@
-def aantalBolletjes(particOfZakelijk):
+def aantalBolletjesOfLiter(particOfZakelijk):
     while True:
         try:
             if particOfZakelijk == '1':
@@ -95,7 +95,7 @@ def bon(lst, smaakLst, toppings, particOfZakelijk):
         toppings[3]['prijs'] = 0.6
     
     for item in toppings:
-        totaalPrijsToppings += item['aantal'] * item['prijs']
+        totaalPrijsToppings += item['aantal'] * item['prijs']   
 
     totaalPrijs += totaalPrijsToppings
 
@@ -106,5 +106,5 @@ def bon(lst, smaakLst, toppings, particOfZakelijk):
     print("-------------------------------")
     print(f"totaal                 € {'%.2f' % totaalPrijs}")
     if particOfZakelijk == "2":
-        print(f"btw (9%)               € {'%.2f' % btw}")
+        print(f"btw ({BTW}%)               € {'%.2f' % btw}")
     print("Bedankt en tot ziens! ")

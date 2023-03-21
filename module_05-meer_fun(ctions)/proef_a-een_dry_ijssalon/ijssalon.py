@@ -36,7 +36,7 @@ while True:
 
 while nogEen:
     if particOfZakelijk == '1': # Particulier
-        aantal = aantalBolletjes(particOfZakelijk)
+        aantal = aantalBolletjesOfLiter(particOfZakelijk)
 
         keuze = bakjeOfHoorntje(aantal)
 
@@ -46,12 +46,15 @@ while nogEen:
 
         nogEen = meerBestellen()  
 
-        tempLst = bolletjesEnKeuzeBerekening(aantal, keuze, lst)
+        # tempLst = bolletjesEnKeuzeBerekening(aantal, keuze, lst)
+
+        bolletjesEnKeuzeBerekening(aantal, keuze, lst)
     elif particOfZakelijk == '2': # Zakelijk
-        aantalLiter = aantalBolletjes(particOfZakelijk)
+        aantalLiter = aantalBolletjesOfLiter(particOfZakelijk)
 
         smaakEnTopping(aantalLiter, smaakLstZakelijk, smaakTekstZakelijk)
         nogEen = False
+
 if particOfZakelijk == '1':
     bon(lst, smaakLstKlant, toppingLst, particOfZakelijk)
 else:

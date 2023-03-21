@@ -4,7 +4,11 @@
 
 ## Python:
 CJV 23 krijgen en dan een begin maken van meesterproef.
-Progress: 
+Progress: ✔
+
+## HTML & CSS:
+CJV 7 krijgen
+Progress: ✔
 
 # 17 Maart 2023
 
