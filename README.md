@@ -7,7 +7,7 @@ CJV 23 krijgen en dan een begin maken van meesterproef.
 Progress: ✔
 
 ## HTML & CSS:
-CJV 7 krijgen
+CJV 7 krijgen & website live zetten
 Progress: ✔
 
 # 17 Maart 2023
