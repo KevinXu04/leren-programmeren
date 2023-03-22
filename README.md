@@ -11,6 +11,12 @@ https://kevinxu04.github.io/
 ## Javscript
 Meesterproef | CJV 3
 
+# 22 Maart 2023
+
+## HTML & CSS:
+Spellings fouten uit halen en de tab schoolprojecten updaten naar waar ik nu ben.
+Progress: ✔
+
 # 21 Maart 2023
 
 ## Python:
