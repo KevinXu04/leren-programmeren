@@ -11,6 +11,14 @@ https://kevinxu04.github.io/
 ## Javscript
 Meesterproef | CJV 3
 
+# 23 Maart 2023
+
+## Python:
+Bedenken hoe ik de UNO AI ga maken.
+
+## Back end:
+Beginnen aan Back end 1.
+
 # 22 Maart 2023
 
 ## HTML & CSS:
