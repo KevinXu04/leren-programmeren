@@ -1,23 +1,20 @@
 # Kevin Xiu
 
-# Leerpaden Status:
-## Python:
-Meesterproef | MP.O1 - Keuze & Verantwoording
+# 28 Maart 2023
 
-## HTML & CSS:
-Afgerond. 
-https://kevinxu04.github.io/
-
-## Javscript
-Meesterproef | CJV 3
+## Back End:
+Mad libs opnieuw maken en dan cjv voor back end
+Progress: 
 
 # 23 Maart 2023
 
 ## Python:
 Bedenken hoe ik de UNO AI ga maken.
+Progress: X
 
-## Back end:
+## Back End:
 Beginnen aan Back end 1.
+Progress: ✔
 
 # 22 Maart 2023
 
