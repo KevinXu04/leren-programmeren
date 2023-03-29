@@ -1,10 +1,16 @@
 # Kevin Xiu
 
-# 28 Maart 2023
+# 23 Maart 2023
 
 ## Back End:
 Mad libs opnieuw maken en dan cjv voor back end
 Progress: 
+
+# 28 Maart 2023
+
+## Back End:
+Workshop hele dag
+Progress: ✔
 
 # 23 Maart 2023
 
