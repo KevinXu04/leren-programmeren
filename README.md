@@ -1,10 +1,24 @@
 # Kevin Xiu
 
-# 23 Maart 2023
+# 30 Maart 2023
+
+## Python:
+CJV 24
+Progress:
+
+## Javascript:
+CJV Meesterproef
+Progress:
 
 ## Back End:
-Mad libs opnieuw maken en dan cjv voor back end
-Progress: 
+CJV SQL
+Progress:
+
+# 29 Maart 2023
+
+## Back End:
+Mad libs opnieuw maken
+Progress: ✔
 
 # 28 Maart 2023
 
