@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url("fonts/font.ttf");
+}
+
+*{
+    font-family: CustomFont;
+}
+
+
+.button1{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
