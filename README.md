@@ -1,18 +1,29 @@
 # Kevin Xiu
 
+# Week Taak:
+
+## Python:
+Trello, Repo en flowchart maken voor meesterproef
+
+## Javascript:
+Meesterproef keuze kiezen.
+
+## Back End:
+BE3O1, BE3O2 en BE3O3 maken 
+
 # 30 Maart 2023
 
 ## Python:
 CJV 24
-Progress:
+Progress: ✔
 
 ## Javascript:
 CJV Meesterproef
-Progress:
+Progress: ✔
 
 ## Back End:
 CJV SQL
-Progress:
+Progress: ✔
 
 # 29 Maart 2023
 
