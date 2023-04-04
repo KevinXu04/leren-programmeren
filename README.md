@@ -3,13 +3,26 @@
 # Week Taak:
 
 ## Python:
-Trello, Repo en flowchart maken voor meesterproef
+Trello, Repo en flowchart maken voor meesterproef. Progress: ✔
 
 ## Javascript:
-Meesterproef keuze kiezen.
+Meesterproef keuze kiezen. Progress: ✔
 
 ## Back End:
 BE3O1, BE3O2 en BE3O3 maken 
+
+# 5 April 2023
+
+## Javascript
+Stemwijzer gekozen en de code helemaal geschreven. Progress: ✔
+
+## Back End:
+Back End 3 bekijken, omdat ik niet snap
+
+# 4 April 2023
+
+## Python:
+Meesterproef Flowchart, repo en flowchart gemaakt. Progress: ✔
 
 # 30 Maart 2023
 
