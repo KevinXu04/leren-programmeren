@@ -13,6 +13,9 @@ BE3O1, BE3O2 en BE3O3 maken
 
 # 8 April 2023
 
+## Python
+Meesterproef aantal spelers opvragen, dek aanmaken, kaarten uitdelen af
+
 ## Javascript
 Aparte repo, url en flowchart gemaakt voor de meesterproef.
 
