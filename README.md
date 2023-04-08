@@ -11,6 +11,14 @@ Meesterproef keuze kiezen. Progress: ✔
 ## Back End:
 BE3O1, BE3O2 en BE3O3 maken 
 
+# 8 April 2023
+
+## Javascript
+Aparte repo, url en flowchart gemaakt voor de meesterproef.
+
+## Back End
+De queries 1, 2 en 3 gemaakt van Back End 3
+
 # 5 April 2023
 
 ## Javascript
