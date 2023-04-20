@@ -58,3 +58,25 @@ def getNumberOfSentences(text: str) -> int:
 # opdracht 3
 def getNumberOfWords(text: str) -> int:
     return len(text.split())
+
+# opdracht 5
+def getAVIScore(text: str) -> int:
+    woorden = getNumberOfWords(text)
+    zinnen = getNumberOfSentences(text)
+
+    score = zinnen / woorden
+
+    if score <= 7:
+        AVISCORE = 5
+    elif score > 7 and score <= 8:
+        AVISCORE = 6
+    elif score > 8 and score <= 9:
+        AVISCORE = 7
+    elif score > 9 and score <= 10:
+        AVISCORE = 8
+    elif score > 10 and score <= 11:
+        AVISCORE = 11
+    elif score > 11:
+        AVISCORE = 12
+    
+    return AVISCORE
