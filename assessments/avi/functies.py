@@ -14,6 +14,8 @@ Bovendien is het een leuke hobby, die je veel voldoening en plezier kan geven, a
 als je de reacties van je vrienden en familie ziet, als je ze verrast met je eigen creaties.
 """
 
+TEST_TEXT = """Hallo dit is een test. Tweede zin. Derde zin. Vierde zin. Vijfde zin."""
+
 ALLOWED_IN_WORD = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-"
 
 # depending on the type of text you wish you get an easy, difficult or text from file.
@@ -22,6 +24,8 @@ def getText(choice: str) -> str:
         return EASY_TEXT
     elif choice == 'difficult':
         return DIFFICULT_TEXT
+    elif choice == 'test':
+        return TEST_TEXT
     else:
         return getFileContentAsString(choice)
 
@@ -32,11 +36,24 @@ def getFileContentAsString(textFile: str) -> str:
 
 # opdracht 1
 def getNumberOfCharacters(text: str) -> int:
+    # Hij telt alle characters op en telt alle tekens op. Hij haalt het aantal characters af van 
     return len(text) - text.count(" ") - text.count(",") - text.count(".")
 
 # opdracht 2
 def getNumberOfSentences(text: str) -> int:
-    return 0
+    # Ik doe ze in een lijst
+    lst = [".", "!", "?"]
+
+    # Het aantal zinnen
+    zinnen = 0
+
+    # Hij kijkt elke character in de string
+    for character in text:
+        # Als de character in de lijst zit voert hij de onderste code uit
+        if character in lst:
+            zinnen += 1
+
+    return zinnen
 
 # opdracht 3
 def getNumberOfWords(text: str) -> int:

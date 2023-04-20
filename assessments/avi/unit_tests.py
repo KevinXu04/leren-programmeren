@@ -13,10 +13,26 @@ else:
 # test 2: getNumberOfSentences
 if getNumberOfSentences(getText('easy')) == 14:
     print("Test geslaagd")
+    print(getNumberOfSentences(getText('easy')))
 else:
     print("Deze test is niet geslaagd")
+    print(getNumberOfSentences(getText('easy')))
 
 # schrijf zelf nog een extra testen voor getNumberOfSentences (gebruik test.txt).
+
+if getNumberOfSentences(getText('difficult')) == 3:
+    print("Test geslaagd")
+    print(getNumberOfSentences(getText('difficult')))
+else:
+    print("Deze test is niet geslaagd")
+    print(getNumberOfSentences(getText('difficult')))
+
+if getNumberOfSentences(getText('test')) == 5:
+    print("Test geslaagd")
+    print(getNumberOfSentences(getText('test')))
+else:
+    print("Deze test is niet geslaagd")
+    print(getNumberOfSentences(getText('test')))
 
 # test 3: getNumberOfWords
 print(getNumberOfWords(getText('data\difficult1.txt')))
