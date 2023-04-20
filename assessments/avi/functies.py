@@ -36,8 +36,13 @@ def getFileContentAsString(textFile: str) -> str:
 
 # opdracht 1
 def getNumberOfCharacters(text: str) -> int:
-    # Hij telt alle characters op en telt alle tekens op. Hij haalt het aantal characters af van 
-    return len(text) - text.count(" ") - text.count(",") - text.count(".")
+    aantalCharacters = 0
+
+    for character in text:
+        if character in ALLOWED_IN_WORD:
+            aantalCharacters += 1
+
+    return aantalCharacters
 
 # opdracht 2
 def getNumberOfSentences(text: str) -> int:
