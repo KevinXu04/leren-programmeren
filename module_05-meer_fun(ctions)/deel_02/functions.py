@@ -137,7 +137,9 @@ def getMaxAmountOfNightsInInn(leftoverGold:float, people:int, horses:int) -> int
     humanInnCosts = silver2gold(people * COST_INN_HUMAN_SILVER_PER_NIGHT)
     horseInnCosts = copper2gold(horses * COST_INN_HORSE_COPPER_PER_NIGHT)
 
-    return round(leftoverGold / (humanInnCosts + horseInnCosts))
+    print(round(leftoverGold // (humanInnCosts + horseInnCosts)))
+
+    return round(leftoverGold // (humanInnCosts + horseInnCosts))
 
 def getJourneyInnCostsInGold(nightsInInn:int, people:int, horses:int) -> float:
     humanInnCosts = silver2gold(people * COST_INN_HUMAN_SILVER_PER_NIGHT)

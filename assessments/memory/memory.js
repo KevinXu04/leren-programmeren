@@ -12,10 +12,10 @@ function shuffle(array) {
     return array;
 }
 
-
 let animalLst = ["lion", "lobster", "seagull", "skunk", "turtle", "bear", "deer", "frog", "horse", "tiger"];
 let test = [];
 let firstCard, secondCard;
+let activeCard = false;
 
 let buttonsContainer = document.getElementById("buttons");
 let imagesContainer = document.getElementById("images");
@@ -31,15 +31,16 @@ for (let i = 0; i < animalLst.length; i++){
 
     test.push(animalLst[i]);
 
-    console.log(button.id)
+    console.log(button.id);
 
     button.innerText = animalLst[i];
     let image = document.createElement("img");
     image.src = "images/background.png";
     button.addEventListener("click", function(){
+        activeCard = true;
         image.src = `images/${animalLst[i]}.png`;
-        firstCard = button.id;
-        console.log(firstCard)
+        firstCard = button;
+        console.log(firstCard);
     });
 
     button.appendChild(image);
@@ -57,7 +58,12 @@ for (let x = 0; x < tempLst.length; x++){
     image.src = "images/background.png";
     button.addEventListener("click", function(){
         image.src = `images/${tempLst[x]}.png`;
-        secondCard = button.id
+        secondCard = button
+        if (secondCard.id != firstCard.id) {
+            setTimeout(() => {
+                image.src = "images/background.png";
+            }, 1000);
+        }
     });
     
     button.appendChild(image);
